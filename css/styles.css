@@ -22,7 +22,14 @@ html {
 }
 
 /*----медиа-запросы-------*/
-@media screen and (max-width: 600px) {
+.mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 999px) {
+    .menu {
+        display: none;
+    }
     .mobile_menu {
         display: block;
         color: #fff;
@@ -39,10 +46,8 @@ html {
 
     .theme,
     .theme_choose,
-    .header,
     .for_mobile,
-    .mobile_list,
-    .menu {
+    .mobile_list {
         display: none;
     }
 
@@ -195,10 +200,6 @@ nav ul {
     color: #c7b299;
     font-size: 14px;
     font-weight: 300;
-}
-
-.mobile_menu {
-    display: none;
 }
 
 img {
