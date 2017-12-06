@@ -37,6 +37,22 @@ html {
         top: 5%;
         left: 5%;
     }
+
+    a .logo {
+        display: block;
+        color: #fff;
+        position: absolute;
+        top: 5%;
+        left: 0;
+    }
+
+    .menu a .fa .fa-search {
+        display: block;
+        color: #fff;
+        position: absolute;
+        top: 5%;
+        left: 45%;
+    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 740px) {
@@ -47,7 +63,8 @@ html {
     .theme,
     .theme_choose,
     .for_mobile,
-    .mobile_list {
+    .mobile_list,
+    .video_about {
         display: none;
     }
 
