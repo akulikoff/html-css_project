@@ -22,13 +22,46 @@ html {
 }
 
 /*----медиа-запросы-------*/
-@media screen and (max-width: 600px) {
+.mobile_menu,
+.mobile_menu > i {
+    display: none;
+}
+
+@media screen and (max-width: 999px) {
+    .menu li {
+        display: none;
+    }
+
     .mobile_menu {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .mobile_menu li,
+    .mobile_menu > i {
+        display: block;
+        color: #fff;
+        list-style-type: none;
+        text-align: left;
+        padding: 5px;
+        transition: .7s ease-out;
+    }
+
+    .mobile_menu img.logo {
         display: block;
         color: #fff;
         position: absolute;
         top: 5%;
-        left: 5%;
+        left: 0;
+    }
+
+    .mobile_menu > a > i {
+        display: block;
+        color: #fff;
+        position: absolute;
+        top: 5%;
+        left: 45%;
     }
 }
 
@@ -39,10 +72,9 @@ html {
 
     .theme,
     .theme_choose,
-    .header,
     .for_mobile,
     .mobile_list,
-    .menu {
+    .video_about {
         display: none;
     }
 
@@ -138,7 +170,7 @@ body {
 
 .logo {
     height: 56px;
-    display: inline-flex;
+    display: flex;
 }
 
 li a h2 {
@@ -153,14 +185,14 @@ a {
     text-decoration: none;
 }
 
-nav {
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-nav ul {
+.menu ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -170,7 +202,6 @@ nav ul {
 
 .menu li {
     list-style-type: none;
-    flex-basis: 15%;
     max-width: 20%;
     margin: 0 5px 0 5px;
     white-space: pre;
@@ -197,7 +228,7 @@ nav ul {
     font-weight: 300;
 }
 
-.mobile_menu {
+.menu_hide a {
     display: none;
 }
 
@@ -308,7 +339,6 @@ input:hover, input:active {
 }
 
 .theme {
-    min-height: 60%;
     background-color: #fbfaf8;
     margin: 3em auto 0;
 }
@@ -346,6 +376,10 @@ input:hover, input:active {
 
 .projects_list ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects_list li a {
@@ -447,7 +481,7 @@ figure {
     overflow: hidden;
 }
 
-.video_wrap video {
+.video {
     position: absolute;
     top: 0;
     left: 0;
