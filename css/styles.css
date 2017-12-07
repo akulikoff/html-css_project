@@ -326,7 +326,6 @@ input:hover, input:active {
 }
 
 .theme {
-    min-height: 60%;
     background-color: #fbfaf8;
     margin: 3em auto 0;
 }
