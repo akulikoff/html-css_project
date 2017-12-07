@@ -53,7 +53,7 @@ html {
         color: #fff;
         position: absolute;
         top: 5%;
-        left: 0;
+        left: 46%;
     }
 
     .mobile_menu > a > i {
@@ -64,7 +64,18 @@ html {
         left: 45%;
     }
 
-    .mobile_menu > a > i:hover .menu_hide {
+    .mobile_menu > a > i:hover li {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .theme_carousel {
+        display: none;
+    }
+
+    .projects_list ul,
+    .copy,
+    .copy_align {
         display: flex;
         flex-direction: column;
     }
@@ -83,10 +94,6 @@ html {
         display: none;
     }
 
-    .theme_carousel {
-        display: none;
-    }
-
     .for_mobile {
         width: 100%;
         margin: 0;
@@ -97,13 +104,6 @@ html {
     .mobile_pic {
         float: left;
         padding: 5px;
-    }
-
-    .projects_list ul,
-    .copy,
-    .copy_align {
-        display: flex;
-        flex-direction: column;
     }
 
 }
