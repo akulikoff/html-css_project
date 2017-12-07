@@ -63,6 +63,11 @@ html {
         top: 5%;
         left: 45%;
     }
+
+    .mobile_menu > a > i:hover .menu_hide {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 740px) {
@@ -94,12 +99,13 @@ html {
         padding: 5px;
     }
 
-    .projects_list > ul,
+    .projects_list ul,
     .copy,
     .copy_align {
         display: flex;
         flex-direction: column;
     }
+
 }
 
 body {
@@ -125,7 +131,7 @@ body {
 
 .heading_toggle_left {
     position: absolute;
-    left: 2%;
+    left: 8%;
     top: 46%;
     color: #fff;
 }
@@ -140,7 +146,7 @@ body {
 
 .heading_toggle_right {
     position: absolute;
-    left: 96%;
+    left: 91%;
     top: 46%;
     color: #fff;
 }
@@ -233,7 +239,7 @@ a {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -485,7 +491,7 @@ figure {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     max-height: 100%;
     background: transparent url("../images/poster.jpg") no-repeat 0 0;
